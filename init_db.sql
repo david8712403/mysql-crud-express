@@ -1,0 +1,9 @@
+CREATE TABLE task (
+	id INT NOT NULL AUTO_INCREMENT,
+	title VARCHAR ( 255 ) NOT NULL,
+	description VARCHAR ( 255 ) NOT NULL,
+	datetime TIMESTAMP ( 3 ) NOT NULL,
+	created TIMESTAMP ( 3 ) NOT NULL,
+	updated TIMESTAMP ( 3 ) NOT NULL,
+	PRIMARY KEY ( id ) 
+);

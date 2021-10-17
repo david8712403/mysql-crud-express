@@ -1,0 +1,30 @@
+GET http://localhost:3000/
+
+### CREATE
+PUT http://localhost:3000/task
+Content-Type: application/json
+
+{
+    "title": "test",
+    "description": "description text",
+    "datetime": "2021-10-17 19:00:00"
+}
+
+### READ
+GET http://localhost:3000/task
+
+###
+GET http://localhost:3000/task/1
+
+### UPDATE
+PATCH http://localhost:3000/task/1
+Content-Type: application/json
+
+{
+    "title": "test",
+    "description": "update description text",
+    "datetime": "2021-10-17 20:00:00"
+}
+
+### DELETE
+DELETE http://localhost:3000/task/2
